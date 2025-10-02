@@ -6,6 +6,7 @@ import heroImage from "@/assets/hero-calligraphy.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
+import { blogPosts } from "@/data/blogData";
 
 const Home = () => {
   const featuredWorks = [
@@ -113,51 +114,38 @@ const Home = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {[
-            {
-              title: "The History of Arabic Calligraphy",
-              excerpt: "Explore the rich heritage and evolution of Arabic calligraphic art through the centuries.",
-              date: "Jan 15, 2025",
-              image: "https://images.unsplash.com/photo-1580477667995-2b94f01c9516?w=600&q=80",
-            },
-            {
-              title: "Mastering Thuluth Script",
-              excerpt: "A comprehensive guide to understanding and practicing one of the most elegant styles.",
-              date: "Jan 10, 2025",
-              image: "https://images.unsplash.com/photo-1609743522653-52354461eb27?w=600&q=80",
-            },
-            {
-              title: "Tools of the Trade",
-              excerpt: "Discover the essential tools used by calligraphers and how technology shapes the art.",
-              date: "Jan 5, 2025",
-              image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&q=80",
-            },
-          ].map((post, index) => (
+          {blogPosts.slice(0, 3).map((post, index) => (
             <Card
               key={index}
               className="group overflow-hidden border-border shadow-elegant hover:shadow-glow transition-all duration-300 animate-fade-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardContent className="p-0">
-                <div className="relative aspect-video overflow-hidden">
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
-                  />
-                </div>
-                <div className="p-6">
-                  <p className="text-sm text-muted-foreground mb-2">{post.date}</p>
-                  <h3 className="font-display text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                    {post.title}
-                  </h3>
-                  <p className="text-muted-foreground mb-4">{post.excerpt}</p>
-                  <Button variant="ghost" className="p-0 h-auto font-semibold" asChild>
-                    <Link to="/blogs">
+                <Link to={`/blogs/${post.id}`}>
+                  <div className="relative aspect-video overflow-hidden">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <p className="text-sm text-muted-foreground mb-2">
+                      {new Date(post.date).toLocaleDateString('en-US', { 
+                        month: 'short', 
+                        day: 'numeric', 
+                        year: 'numeric' 
+                      })}
+                    </p>
+                    <h3 className="font-display text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                      {post.title}
+                    </h3>
+                    <p className="text-muted-foreground mb-4 line-clamp-2">{post.excerpt}</p>
+                    <Button variant="ghost" className="p-0 h-auto font-semibold">
                       Read More <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </div>
+                    </Button>
+                  </div>
+                </Link>
               </CardContent>
             </Card>
           ))}
