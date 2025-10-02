@@ -25,36 +25,65 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    id: 1,
-    title: "The History of Arabic Calligraphy",
-    excerpt: "Explore the rich heritage and evolution of Arabic calligraphic art through the centuries, from its origins to modern interpretations.",
-    date: "2025-01-15",
-    readTime: "5 min read",
-    category: "History",
-    image: blogHistory,
-    content: {
-      introduction: "Arabic calligraphy is more than just beautiful writing—it's a sacred art form that has evolved over 1,400 years. From the earliest Quranic manuscripts to contemporary artistic expressions, this visual language has captivated hearts and minds across cultures.",
-      sections: [
-        {
-          heading: "The Origins: 7th Century",
-          text: "Arabic calligraphy emerged alongside the revelation of the Quran in the 7th century. The need to preserve the divine text with utmost beauty and accuracy led to the development of various scripts. The earliest forms, such as Kufic script, were angular and geometric, reflecting the architectural aesthetics of early Islamic civilization."
-        },
-        {
-          heading: "The Golden Age: 8th-13th Centuries",
-          text: "During the Abbasid Caliphate, calligraphy reached new heights of sophistication. Master calligraphers like Ibn Muqla (886-940 CE) standardized proportions and established rules that would govern the art for centuries. Six classical scripts emerged: Thuluth, Naskh, Muhaqqaq, Rayhani, Tawqi, and Riqa."
-        },
-        {
-          heading: "Regional Variations",
-          text: "As Islam spread across continents, regional styles developed. Persian calligraphers refined the Nastaliq script, creating flowing, diagonal compositions. Ottoman masters elevated Diwani script to royal status. In North Africa, Maghrebi script developed its distinctive rounded forms."
-        },
-        {
-          heading: "Modern Renaissance",
-          text: "The 20th and 21st centuries have witnessed a renaissance in Arabic calligraphy. Contemporary artists blend traditional techniques with modern aesthetics, creating works that bridge heritage and innovation. Digital tools now complement traditional methods, expanding creative possibilities."
-        }
-      ],
-      conclusion: "Understanding the history of Arabic calligraphy enriches our appreciation of this timeless art form. Each stroke carries centuries of tradition, spiritual devotion, and artistic excellence—a legacy that continues to inspire artists and admirers worldwide."
-    }
-  },
+  id: 1,
+  title: "The History of Arabic Calligraphy",
+  excerpt: "Explore the rich heritage and evolution of Arabic calligraphic art through the centuries, from its origins to modern interpretations.",
+  date: "2025-01-15",
+  readTime: "20 min read",
+  category: "History",
+  image: blogHistory,
+  content: {
+    introduction: "Arabic calligraphy is much more than a way of writing; it is a unique artistic expression that intertwines faith, culture, and aesthetic beauty. Its evolution spans centuries, transcending mere communication to become an emblem of spiritual and artistic excellence. From its earliest beginnings alongside the Quran to modern digital interpretations, this visual language has captivated hearts and minds across the Islamic world.",
+    sections: [
+      {
+        heading: "Origins of Arabic Calligraphy",
+        text: "The roots of Arabic calligraphy lie in the early scripts of the Arabian Peninsula. Before Islam, Arabs used a form of writing known as the Nabataean script, derived from Aramaic, which gradually evolved into early Arabic writing. This primitive script primarily served administrative and commercial purposes, appearing on inscriptions, stones, and coins. With the emergence of Islam in the 7th century CE, Arabic calligraphy acquired a sacred dimension. The Quran, revealed in Arabic, required transcription that combined clarity, precision, and elegance. This led to the refinement of early scripts and the birth of calligraphy as a highly respected art form."
+      },
+      {
+        heading: "The Role of the Quran in Calligraphy",
+        text: "The Quran played a pivotal role in shaping Arabic calligraphy. Its text needed to be copied accurately for religious and educational purposes. Early Muslim communities emphasized producing manuscripts that were both legible and aesthetically pleasing. The earliest Quranic manuscripts were written in the Kufic script, which was angular and geometric, making it suitable for inscriptions on stone, architecture, and manuscripts. Over time, calligraphers developed rules for proportion, symmetry, and ornamentation, laying the foundation for Arabic calligraphy as an art form."
+      },
+      {
+        heading: "Early Scripts of Arabic Calligraphy",
+        text: "Arabic calligraphy evolved through various scripts, each reflecting its historical and cultural context. Notable early scripts include:\n\n1. **Kufic Script**: Originating in the city of Kufa, Iraq, around the 7th century CE, it is angular, bold, and monumental. Kufic was primarily used for Quranic manuscripts and architectural inscriptions, emphasizing balance and geometric harmony.\n\n2. **Naskh Script**: Developed in the 10th century CE, Naskh became ideal for books and administrative documents. Rounded and flowing, it offered clarity for continuous text and eventually became the standard for Quranic manuscripts.\n\n3. **Thuluth Script**: Emerging during the Abbasid period, Thuluth is elegant, cursive, and decorative, often used for architectural inscriptions. It allowed elongated vertical strokes and intricate ligatures.\n\n4. **Diwani Script**: Developed in the Ottoman Empire, Diwani is highly decorative with intertwined letters, used for royal decrees and official documents.\n\n5. **Other Scripts**: Ruq’ah, Maghrebi, and Persian Nastaliq each developed in different regions, reflecting functional and aesthetic needs of everyday writing, poetry, and literature."
+      },
+      {
+        heading: "Tools and Materials Used in Calligraphy",
+        text: "The art of Arabic calligraphy is closely tied to the tools and materials used by calligraphers:\n\n1. **Qalam (Reed Pen)**: Made from dried reed or bamboo, cut to produce thick and thin strokes. Mastery of the qalam is essential for precise proportions and smooth curves.\n\n2. **Ink**: Traditionally made from soot, gum arabic, and other organic materials. Black ink symbolized clarity and permanence, while colored inks were used for decoration.\n\n3. **Paper and Parchment**: Early calligraphy was on parchment, papyrus, or stone. The introduction of paper allowed greater experimentation and widespread manuscript production.\n\n4. **Rulers and Templates**: Used for geometric precision, especially in architectural inscriptions and decorative layouts."
+      },
+      {
+        heading: "Arabic Calligraphy and Islamic Art",
+        text: "Calligraphy is inseparable from Islamic art and architecture. In Islam, figurative representation is often discouraged, so calligraphy became the primary artistic expression, adorning mosques, palaces, manuscripts, ceramics, and textiles.\n\n- **Architectural Calligraphy**: From the Umayyad Mosque in Damascus to the Alhambra in Spain, inscriptions feature Quranic verses, prayers, or poetry, harmonizing form, content, and space.\n- **Manuscript Illumination**: Quranic and literary manuscripts were adorned with geometric patterns, arabesques, and gold leaf, highlighting the text visually and spiritually.\n- **Decorative Arts**: Calligraphy appears on coins, textiles, ceramics, metalwork, and glass, demonstrating its versatility and cultural significance."
+      },
+      {
+        heading: "Evolution Through Islamic Dynasties",
+        text: "Arabic calligraphy developed dynamically under different Islamic dynasties:\n\n- **Umayyad Caliphate (661–750 CE)**: Focused on monumental Kufic inscriptions and decorative motifs.\n- **Abbasid Caliphate (750–1258 CE)**: Flourished in Baghdad; development of Naskh and Thuluth scripts; formal calligraphy schools emerged.\n- **Fatimid and Mamluk Dynasties (909–1517 CE)**: Egypt and North Africa emphasized regional styles like Maghrebi; architecture and manuscripts flourished.\n- **Ottoman Empire (1299–1922 CE)**: Elevated calligraphy to royal art; Diwani and Ta’liq scripts; master calligraphers codified standards.\n- **Safavid and Mughal Empires**: Nastaliq script in Persia; grand manuscripts in Mughal India; blending Arabic and Persian aesthetics."
+      },
+      {
+        heading: "Prominent Calligraphers in History",
+        text: "Master calligraphers shaped Arabic calligraphy:\n\n- **Ibn Muqla (885–940 CE)**: Developed proportional systems and standardized Naskh and Thuluth scripts.\n- **Ibn al-Bawwab (d. 1022 CE)**: Refined Ibn Muqla’s system; elegant Quranic manuscripts.\n- **Yaqut al-Musta’simi (d. 1298 CE)**: Perfected Thuluth script; stylistic innovations.\n- **Sheikh Hamdullah (1436–1520 CE)**: Father of Ottoman calligraphy; codified styles and trained disciples.\n- **Hâfiz Osman (1642–1698 CE)**: Further refined Ottoman scripts; influenced manuscripts, architecture, and teaching."
+      },
+      {
+        heading: "Styles and Aesthetic Principles",
+        text: "Arabic calligraphy is an art governed by aesthetic principles:\n\n- **Proportion (Al-Khatt al-Mu’tadil)**: Precise letter ratios ensure harmony.\n- **Balance and Symmetry**: Visual equilibrium in strokes.\n- **Flow and Rhythm**: Curves and ligatures create movement.\n- **Decoration**: Geometric patterns and arabesques enhance text.\n- **Legibility and Functionality**: Scripts remain readable despite ornamentation.\n\nDifferent scripts embody these principles in unique ways, reflecting their purpose—monumental, devotional, decorative, or administrative."
+      },
+      {
+        heading: "Modern Era of Arabic Calligraphy",
+        text: "With printing and digital technology, Arabic calligraphy adapted:\n\n- **Print and Typography**: Naskh and simplified scripts adapted for books and newspapers.\n- **Digital Calligraphy**: Software allows animation, design, and font creation.\n- **Contemporary Art**: Artists blend traditional scripts with modern aesthetics, abstract forms, and experimental compositions.\n- **Global Influence**: Appears in fashion, branding, murals, and public art, inspiring designers worldwide."
+      },
+      {
+        heading: "Calligraphy as Spiritual Practice",
+        text: "Arabic calligraphy is often a spiritual discipline. Writing Quranic verses is an act of devotion requiring patience, focus, and mindfulness. Calligraphers view themselves as mediators between text and form, transforming sacred words into visual art that evokes reflection and reverence."
+      },
+      {
+        heading: "Education and Preservation",
+        text: "Preserving Arabic calligraphy involves:\n\n- **Copying Masters’ Works**: Students reproduce classical pieces to internalize proportions and style.\n- **Qalam Practice**: Daily practice for stroke mastery.\n- **Manuscript Study**: Understanding historical manuscripts for aesthetic and spiritual insight.\n\nOnline courses, exhibitions, and workshops further ensure the continuity and appreciation of this timeless art."
+      }
+    ],
+    conclusion: "The history of Arabic calligraphy is a testament to human creativity, faith, and cultural exchange. From early Kufic inscriptions to modern digital art, each stroke carries centuries of tradition, devotion, and artistic excellence. Arabic calligraphy represents a unique convergence of faith, culture, and creativity that transcends time and geography. Understanding its evolution enriches our appreciation of this art form, inspiring both artists and admirers around the world."
+  }
+}
+,
   {
     id: 2,
     title: "Mastering Thuluth Script",
