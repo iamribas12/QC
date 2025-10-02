@@ -101,8 +101,79 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Latest Blog Posts */}
+      <section className="container mx-auto px-4 py-20 bg-muted/30">
+        <div className="text-center mb-12 animate-fade-in">
+          <h2 className="font-display text-4xl font-bold text-foreground mb-4">
+            Latest from Our Blog
+          </h2>
+          <p className="text-muted-foreground text-lg">
+            Insights and stories from the world of calligraphy
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {[
+            {
+              title: "The History of Arabic Calligraphy",
+              excerpt: "Explore the rich heritage and evolution of Arabic calligraphic art through the centuries.",
+              date: "Jan 15, 2025",
+              image: "https://images.unsplash.com/photo-1580477667995-2b94f01c9516?w=600&q=80",
+            },
+            {
+              title: "Mastering Thuluth Script",
+              excerpt: "A comprehensive guide to understanding and practicing one of the most elegant styles.",
+              date: "Jan 10, 2025",
+              image: "https://images.unsplash.com/photo-1609743522653-52354461eb27?w=600&q=80",
+            },
+            {
+              title: "Tools of the Trade",
+              excerpt: "Discover the essential tools used by calligraphers and how technology shapes the art.",
+              date: "Jan 5, 2025",
+              image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&q=80",
+            },
+          ].map((post, index) => (
+            <Card
+              key={index}
+              className="group overflow-hidden border-border shadow-elegant hover:shadow-glow transition-all duration-300 animate-fade-up"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <CardContent className="p-0">
+                <div className="relative aspect-video overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-6">
+                  <p className="text-sm text-muted-foreground mb-2">{post.date}</p>
+                  <h3 className="font-display text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                    {post.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-4">{post.excerpt}</p>
+                  <Button variant="ghost" className="p-0 h-auto font-semibold" asChild>
+                    <Link to="/blogs">
+                      Read More <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <Button asChild variant="outline" size="lg">
+            <Link to="/blogs">
+              View All Articles <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
+        </div>
+      </section>
+
       {/* CTA Section */}
-      <section className="bg-gradient-primary py-20 mt-20">
+      <section className="bg-gradient-primary py-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-display text-4xl font-bold text-primary-foreground mb-6">
             Explore the Beauty of Islamic Art
