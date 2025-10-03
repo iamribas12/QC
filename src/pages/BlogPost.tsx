@@ -50,7 +50,7 @@ const BlogPost = () => {
             <Badge className="mb-4 bg-accent text-accent-foreground">
               {blog.category}
             </Badge>
-            <h1 className="font-display text-4xl md:text-6xl font-bold text-foreground mb-4">
+            <h1 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-4">
               {blog.title}
             </h1>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground">
@@ -85,7 +85,7 @@ const BlogPost = () => {
         <div className="max-w-4xl mx-auto">
           {/* Introduction */}
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed">
               {blog.content.introduction}
             </p>
           </div>
@@ -96,12 +96,12 @@ const BlogPost = () => {
           <div className="space-y-12">
             {blog.content.sections.map((section, index) => (
               <section key={index} className="animate-fade-up" style={{ animationDelay: `${index * 100}ms` }}>
-                <h2 className="font-display text-3xl font-bold text-foreground mb-6">
+                <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-6">
                   {section.heading}
                 </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <div className="text-base text-muted-foreground leading-relaxed whitespace-pre-wrap">
                   {section.text}
-                </p>
+                </div>
               </section>
             ))}
           </div>
@@ -110,10 +110,10 @@ const BlogPost = () => {
 
           {/* Conclusion */}
           <div className="bg-muted/30 p-8 rounded-lg">
-            <h2 className="font-display text-2xl font-bold text-foreground mb-4">
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">
               Conclusion
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base text-muted-foreground leading-relaxed">
               {blog.content.conclusion}
             </p>
           </div>

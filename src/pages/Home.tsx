@@ -27,13 +27,13 @@ const Home = () => {
         </div>
         
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-up">
-          <h1 className="font-display text-5xl md:text-7xl font-bold mb-6 text-foreground">
+          <h1 className="font-display text-4xl md:text-6xl font-bold mb-6 text-foreground">
             The Art of{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Arabic Calligraphy
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Discover the timeless beauty and spiritual depth of Islamic calligraphic art
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -53,12 +53,12 @@ const Home = () => {
       <section className="container mx-auto px-4 py-20">
         <div className="text-center mb-12 animate-fade-in">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Sparkles className="h-6 w-6 text-accent" />
-            <h2 className="font-display text-4xl font-bold text-foreground">
+            <Sparkles className="h-5 w-5 text-accent" />
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
               Featured Works
             </h2>
           </div>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base">
             Handpicked masterpieces showcasing the beauty of calligraphic art
           </p>
         </div>
@@ -79,7 +79,7 @@ const Home = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                     <div className="p-6 w-full">
-                      <h3 className="font-display text-2xl font-semibold text-foreground mb-2">
+                      <h3 className="font-display text-xl font-semibold text-foreground mb-2">
                         {work.title}
                       </h3>
                       <Button variant="outline" size="sm" asChild>
@@ -105,10 +105,10 @@ const Home = () => {
       {/* Latest Blog Posts */}
       <section className="container mx-auto px-4 py-20 bg-muted/30">
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="font-display text-4xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
             Latest from Our Blog
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base">
             Insights and stories from the world of calligraphy
           </p>
         </div>
@@ -163,10 +163,10 @@ const Home = () => {
       {/* CTA Section */}
       <section className="bg-gradient-primary py-20">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-display text-4xl font-bold text-primary-foreground mb-6">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
             Explore the Beauty of Islamic Art
           </h2>
-          <p className="text-primary-foreground/90 text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-primary-foreground/90 text-base mb-8 max-w-2xl mx-auto">
             Join us in celebrating and preserving the rich heritage of Arabic calligraphy
           </p>
           <Button asChild size="lg" variant="secondary">
